@@ -43,3 +43,40 @@ python script.py file1.csv file2.csv --report payout --format json
 - ✅ `JSON`: реализован, сохраняет файл с именем `report.json`, `report-1.json`, и т.д.
 - ⏳ `CSV`: функция `create_csv_report()` не реализована
 - ⏳ `XML`: функция `create_xml_report()` не реализована
+
+
+Для проверки кода необходимо клонировать репозиторий на ваш дистрибутив командой -
+
+```bash
+git clone https://github.com/kukidon820/read_csv_and_create_reports.git
+```
+
+Далее необходимо перейти в папку проекта -
+
+```bash
+cd read_csv_and_create_reports
+```
+
+Установить python и пакетный менеджер pip - 
+
+```bash
+sudo apt install python3 python3-pip
+```
+
+Далее нужно скачать зависимотсти - 
+
+```bash
+pip3 install -r requirements.txt 
+```
+
+Запустить тесты - 
+
+```bash
+pytest tests/test_main.py 
+```
+
+И наконец запустить скрипт - 
+
+```bash
+python main.py files/data1.csv --report payout --output new_report --format json  
+```
