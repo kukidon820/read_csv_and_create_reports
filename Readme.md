@@ -80,3 +80,8 @@ pytest tests/test_main.py
 ```bash
 python main.py files/data1.csv --report payout --output new_report --format json  
 ```
+
+
+## Отчет 
+
+![image](https://github.com/user-attachments/assets/8c61c3d3-dd67-4047-af76-813e51e4fc80)
